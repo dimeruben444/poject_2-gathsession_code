@@ -1,0 +1,53 @@
+@use "../abstracts/index" as *;
+
+.hero{
+    display: flex;
+    .hero__l{
+        margin-top: 5em;
+        
+        .hero__tittle{
+            font-family: $s-font;
+            font-size: 55px;
+            font-weight: 600;
+            color: $white;
+            margin-bottom: 0.35em;
+            letter-spacing: 0.02em;
+        }
+        .hero__descript{
+            color: $gray;
+            padding-right: 4em;
+        }
+        .hero__cta{
+            display: flex;
+            align-items: center;
+            gap: 1.4em;
+            div{
+                display: flex;
+                align-items: center;
+                gap: 0.4em;
+                .link{
+                    @include link;
+                    font-size: 0.8em;
+                    font-weight: 500;
+                    &:hover{
+                        text-decoration: none;
+                        img{
+                            transform:translateX(-0.33em) ;
+                        }
+                    }
+                }
+                img{
+                    width: 30px;
+                }
+            }
+
+        }
+    }
+
+    .hero__grid figure{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        
+    }
+
+}

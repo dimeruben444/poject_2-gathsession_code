@@ -1,0 +1,11 @@
+@use "../abstracts/index" as *;
+
+header {
+  padding: 1em 0em;
+  display: flex;
+  justify-content: space-between;
+  
+  img{
+    width: 160px;
+  }
+}

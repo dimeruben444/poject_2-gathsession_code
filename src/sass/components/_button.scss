@@ -1,0 +1,21 @@
+@use "../abstracts/index" as *;
+
+
+.btn{
+    @include btn;
+    font-size: 12px;
+    font-weight: 300;
+    box-shadow: 3px 3px 7px rgb(97, 96, 96)  ;
+    border-color: $pink;
+        &:hover{
+            
+              transform: translateY(-0.2em);
+            transition: transform 0.1s ease;
+            
+        &:active{
+            transform: translateY(0);
+
+        }
+    }
+}
+//
