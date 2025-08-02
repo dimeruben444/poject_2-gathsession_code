@@ -46,8 +46,55 @@
 
     .hero__grid figure{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        margin: 1em;
+        gap: 1.2em;
+        margin-top: 2.2em;
+        grid-template-areas: "azul china complete"
+                            "azul naranja complete" 
+                            "rosa naranja complete";
+
+        img{
+            width: 170px;
+        }
         
+        .item1{
+            grid-area: azul;
+            background-color: $bg-blue;
+            border-radius: 4em;
+
+        }
+
+        .item2{
+            grid-area: rosa;
+            background-color: $pink;
+            border-radius: 4em;
+            
+        }
+
+        .item3{
+            grid-area: china ;
+            background-color: $bg-cyan;
+            border-radius: 4em;
+            
+        }
+
+        .item4{
+            grid-area: naranja;
+            background-color: $bg-orange;
+            border-radius: 4em;
+
+        }
+            
+        
+        .item5{
+            grid-area: complete;
+            background-color: $bg-yellow;
+            border-radius: 4em;
+            align-self: center;
+            
+        }
+
+
     }
 
 }

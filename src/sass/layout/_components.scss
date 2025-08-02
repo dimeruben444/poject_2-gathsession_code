@@ -1,0 +1,27 @@
+@use "../abstracts/index" as *;
+
+.components{
+    display: flex;
+    gap: 2em;
+    width: 0;
+    position: absolute;
+    top:600px;
+
+
+    .item{
+        display: flex;
+        align-items: center;
+        gap: 0.8em;
+        img{
+            width: 44px;
+            background-color: $bg-gray ;
+            padding: 8px;
+            border-radius: 0.6em;
+        }
+        h3{
+            color: $white;
+            font-size: 0.8em;
+        }
+
+    }
+}
